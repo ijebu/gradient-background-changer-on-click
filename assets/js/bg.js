@@ -11,8 +11,12 @@ function changeBG() {
   let blue, blues;
   blue = Math.floor(Math.random() * 256);
   blues = Math.floor(Math.random() * 256);
+
+  // First colour of the gradient
   let rgbComplex = "rgb(" + red + " " + green + " " + blue + ")";
+  // Second colour of the gradient
   let rgbComplexs = "rgb(" + reds + " " + greens + " " + blues + ")";
+
   container.style.background =
     "linear-gradient(to top left," +
     rgbComplex +
