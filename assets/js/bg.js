@@ -1,4 +1,4 @@
-function changeBG() {
+function gradientBackground() {
   let container = document.body;
   let red, reds;
   red = Math.floor(Math.random() * 256);
@@ -13,19 +13,18 @@ function changeBG() {
   blues = Math.floor(Math.random() * 256);
 
   // First colour of the gradient
-  let rgbComplex = "rgb(" + red + " " + green + " " + blue + ")";
+  let rgbFirstGroup = "rgb(" + red + " " + green + " " + blue + ")";
   // Second colour of the gradient
-  let rgbComplexs = "rgb(" + reds + " " + greens + " " + blues + ")";
-
+  let rgbSecondGround = "rgb(" + reds + " " + greens + " " + blues + ")";
   container.style.background =
     "linear-gradient(to top left," +
-    rgbComplex +
+    rgbFirstGroup +
     "0%" +
     "," +
-    rgbComplexs +
+    rgbSecondGround +
     "100%" +
     ")";
 }
 
-document.body.addEventListener("click", changeBG());
-document.body.addEventListener("click", changeBG);
+document.body.addEventListener("click", gradientBackground());
+document.body.addEventListener("click", gradientBackground);
