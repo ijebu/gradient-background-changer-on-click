@@ -13,9 +13,9 @@ function gradientBackground() {
   blues = Math.floor(Math.random() * 256);
 
   // First colour of the gradient
-  let rgbFirstGroup = "rgb(" + red + " " + green + " " + blue + ")";
+  let rgbFirstGroup = "rgb(" + red + "," + green + "," + blue + ")";
   // Second colour of the gradient
-  let rgbSecondGround = "rgb(" + reds + " " + greens + " " + blues + ")";
+  let rgbSecondGround = "rgb(" + reds + "," + greens + "," + blues + ")";
   container.style.background =
     "linear-gradient(to top left," +
     rgbFirstGroup +
